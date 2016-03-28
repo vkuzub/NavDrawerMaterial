@@ -62,8 +62,8 @@ public class BaseActivity extends AppCompatActivity {
         initializeDrawerItems();
 
         mDrawer = new DrawerBuilder(this).
-//                withRootView(R.id.root_layout).
-        withToolbar(mToolbar).
+                withRootView(R.id.drawer_layout).
+                withToolbar(mToolbar).
                 withActionBarDrawerToggleAnimated(true).
                 addDrawerItems(
                         mainDrawerItem,
@@ -94,7 +94,7 @@ public class BaseActivity extends AppCompatActivity {
                 }
             }, NAVDRAWER_LAUNCH_DELAY);
 
-                        View mainContent = findViewById(R.id.main_content);
+            View mainContent = findViewById(R.id.main_content);
             if (mainContent != null) {
                 mainContent.animate().alpha(0).setDuration(MAIN_CONTENT_FADEOUT_DURATION);
             }
