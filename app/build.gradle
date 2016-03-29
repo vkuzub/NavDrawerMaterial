@@ -23,9 +23,8 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.2.1'
-    //change to 23.2.0
-    compile 'com.android.support:design:23.1.1'
-    //change to 5.0.6
+    compile 'com.android.support:design:23.2.1'
+    //change to 5.1.4
     compile('com.mikepenz:materialdrawer:4.6.4@aar') {
         transitive = true
     }

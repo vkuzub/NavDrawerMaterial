@@ -65,6 +65,7 @@ public class BaseActivity extends AppCompatActivity {
                 withRootView(R.id.drawer_layout).
                 withToolbar(mToolbar).
                 withActionBarDrawerToggleAnimated(true).
+                withDisplayBelowStatusBar(false).
                 addDrawerItems(
                         mainDrawerItem,
                         settingsDrawerItem,
